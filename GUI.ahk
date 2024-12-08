@@ -28,7 +28,8 @@ Constructor()
 	Buttonadvanced := myGui.Add("Button", "x200 y72 w81 h23 -Theme", "advanced")
 	DropDownList1 := myGui.Add("DropDownList", "x16 y72 w81 -Theme", ["classic", "navigation"])
 	DropDownList2 := myGui.Add("DropDownList", "x16 y120 w81 -Theme", ["text", "image", "combined"])
-	myGui.OnEvent('Close', (*) => ExitApp())
+	myGui.OnEvent('Close', (*) => (MsgBox("Closing"), ExitApp()))
+    
 	myGui.Title := "IRUS"
 	
 	return myGui
