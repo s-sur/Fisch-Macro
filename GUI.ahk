@@ -7,7 +7,8 @@ if(A_LineFile = A_ScriptFullPath && !A_IsCompiled)
 	myGui.Show("w300 h215")
     if(WinExist("Roblox"))
     {
-        myGui.Opt("+Owner" WinExist("Roblox"))
+        ;myGui.Opt("+Owner" WinExist("Roblox"))
+        myGui.Opt("+Parent" WinExist("Roblox"))
     }
     else
     {
