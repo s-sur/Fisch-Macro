@@ -1,0 +1,2 @@
+#SingleInstance
+#NoEnv
