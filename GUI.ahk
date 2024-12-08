@@ -9,6 +9,7 @@ if(A_LineFile = A_ScriptFullPath && !A_IsCompiled)
     {
         ;myGui.Opt("+Owner" WinExist("Roblox"))
         myGui.Opt("+Parent" WinExist("Roblox"))
+        WinActivate("Roblox")
     }
     else
     {
